@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha's Lybrary</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
+
+</head>
+<body>
+    <script>
+        // Function to enable smooth scrolling with delay
+        function delayedSmoothScroll(selector, delay) {
+          setTimeout(() => {
+            document.querySelector(selector).scrollIntoView({
+              behavior: 'smooth'
+            });
+          }, delay);
+        }
+    
+        // Delayed smooth scrolling for the entire homepage
+        window.onload = function() {
+          delayedSmoothScroll('html', 2000); // Adjust delay time (in milliseconds)
+        };
+      </script>    
+      <div id="circle"></div>
+    <header>
+        <a href="#" class="logo">Radha's Library</a>
+        <nav class="nav">
+        <ul class="nav_list">
+            <li><a class="active"
+              href="#" class="nav_list"> Home</a></li>
+
+            <li><a class="nav_item" 
+              href="#sec"class="nav_list"> Library</a></li>
+
+            <li><a class="nav_item"
+              href="#about-us" class="nav_list"> Us</a></li>
+
+            <li><a class="nav_item"
+               href="#help" class="nav_list"> Help</a></li>
+
+            <li><a class="nav_item"
+               href="/project/login/login.php" > Login</a></li>
+
+        </ul>
+
+      </nav>
+    </header>
+
+     <section>
+        <img src="stars.png" id="stars" >
+        <img src="moon.png" id="moon" >
+        <img src="mountains_behind.png" id="mountains_behind" >
+        <h2 id="text">Radha's Library</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front" >
+    </section>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left= value * 0.3 + 'px';
+            moon.style.top= value  + 'px';
+            mountains_behind.style.top= value * 0.5 + 'px';
+            mountains_front.style.left= value * 0+ 'px';
+            text.style.marginRight= value * 4 + 'px';
+            text.style.marginTop= value * 1.5 + 'px'
+            btn.style.marginTop= value * 1.0 + 'px'
+            header.style.top = value * 0.7 + 'px';
+        })
+    </script>
+
+<div class="sec" id="sec">
+ <img id="first" src="g10.png" alt="" data-aos="slide-right">
+    <div class="text-box" data-aos="slide-left">
+     <h2>All About Books!</h2>
+     <p>"Libraries are like Treasure Troves, Filled with Books that hold the Keys to Knowledge and Adventure. They're Magical Places where anyone can Explore, Learn, and Dream, Opening doors to Endless worlds of Imagination."</p>
+     <button id="button"> Enroll now </button>
+    </div>
+     <img id="second" src="g12.svg" alt="" data-aos="slide-right">
+     <div class="text-box-second" data-aos="slide-left">
+      <h2>Get Audio books!</h2>
+      <p>"Video libraries are Treasure Chests of Visual Wonders, Offering a Gateway to Captivating Stories and Inspiring content. They're Vibrant Havens where anyone can Indulge in a World of Entertainment, Exploration, and Enlightenment, all at their Fingertips."</p>
+      <button id="video-button"> Enroll now </button>
+     </div>
+     </div>
+     <script>
+
+        let circle = document.querySelector('#circle');
+
+        window.addEventListener('mousemove', function(details){
+        let xValue = details.clientX + window.scrollX;
+        let yValue = details.clientY + window.scrollY;
+
+        this.setTimeout(function(){
+        circle.style.top = yValue + 'px';
+        circle.style.left = xValue + 'px';
+        }, 200);
+        });
+
+
+        const button= document.querySelector('#button');
+        const videobutton = document.querySelector('#video-button');
+
+        button.addEventListener('click', function(){
+            window.location.href='/project/books/books.html';
+
+        });
+        videobutton.addEventListener('click', function() {
+        window.location.href = '/project/audio/audio.html';
+    });
+
+
+
+     </script>
+
+
+<style>
+  body{
+      background: linear-gradient(to right,rgb(28, 5, 34),rgb(25, 14, 60));
+
+  }
+ 
+
+  #about-us{
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+</style>
+<section id="about-us" >
+  <div class="container" data-aos="fade-in">
+      <h2>About Us</h2>
+      <p>Welcome to Radha's Library, your one-stop destination for learning various computer languages and technologies. We are passionate about empowering individuals with the knowledge and skills they need to succeed in today's digital world.</p>
+      <p>At Radha's Library, we offer a wide range of resources, including books, videos, and tutorials, to help you learn programming languages such as HTML, CSS, JavaScript, Python, C++, Java and more various languages with entra topic books. Whether you're a beginner looking to get started or an experienced developer seeking to expand your knowledge, we have something for everyone.</p>
+      <p>Our team of experienced instructors and content creators are dedicated to providing high-quality educational materials that are both informative and engaging. We believe in making learning accessible to all, which is why our platform is designed to be user-friendly and intuitive.</p>
+      <p>Join us on this exciting learning journey and unlock your full potential in the world of computer science and programming. Start exploring Radha's Library today!</p>
+  </div>
+</section>
+
+<style>
+  #help{
+    height: 65vh;
+  background-color: rgb(28, 5, 34);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  </style>
+<section id="help" >
+  <div class="container" data-aos="fade-in">
+      <h2>Help</h2>
+      <p>Have questions or need assistance? We're here to help! Check out the frequently asked questions below or contact our support team for personalized assistance.</p>
+      
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq">
+          <div class="question">
+              <h4>Can I download the books and videos for offline viewing?</h4>
+              <p>Yes, most of our books and videos are available for download. Look for the download icon next to the resource you want to save offline and follow the instructions to download it to your device.</p>
+          </div>
+          <!-- Add more FAQ items as needed -->
+      </div>
+
+      <h3>Contact Us</h3>
+      <p>If you still have questions or need further assistance, feel free to contact our support team. You can reach us via email at support@radhaslibrary.com or fill out the contact form on our website. We'll get back to you as soon as possible!</p>
+  </div>
+</section>
+
+
+<!-- our aos data -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 600
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+
+}
+
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px;
+}
+.animate{
+    animation: animation 5s ease-in-out forwards;
+
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+
+#background{
+    
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: contain;
+    background-position: 20%;
+    background-image: url(https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    z-index: 9999999;
+    border: 1.2px solid white;
+    pointer-events: none;
+    border-radius: 50%;
+}
+#wrapper h1{
+    color: #fff;
+    text-align: center;
+    /* margin-right: px; */
+    font-size: 700px;
+    font-family: 'Montserrat';
+}
+#whitestrip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    width: 50%;
+    height: 140px;
+    background-color: #fff;
+}
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    height: 330px;
+    width: 230px;
+    background-color: rgb(5, 5, 5);
+}
+#card p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    font-family: "playfair Display";
+    letter-spacing: 1.5px;
+
+}
+#linelem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+}
+#linelem .line{
+    width: 200px;
+    height: 2px;
+    margin: 0 10px;
+    background-color: black;
+}
+#linelem h4{
+    font-family: "PlayFair Display";
+}
+#background h5{
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 15px;
+    transform: rotate(-90deg);
+    font-family: "Montserrat";
+}
+
+@keyframes animation{
+    to{
+        stroke-dashoffset: 450px;
+        opacity: 0;
+    }
+}

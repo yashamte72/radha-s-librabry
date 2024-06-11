@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book and Audiobook</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+    }
+
+    .container {
+        display: flex;
+        width: 80%;
+        max-width: 800px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-side {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .audiobook-side {
+        flex: 1;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .audiobook-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .audiobook-list-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .audiobook-list-item:last-child {
+        border-bottom: none;
+    }
+
+    .audiobook-list-item:hover {
+        background-color: #e0e0e0;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="book-side">
+        <!-- Placeholder for book image -->
+        <img src="book-image.jpg" alt="Book Image" style="max-width: 100%;">
+    </div>
+    <div class="audiobook-side">
+        <h2>Chapter-wise Audiobook</h2>
+        <ul class="audiobook-list">
+            <li class="audiobook-list-item">Chapter 1: Title of Chapter 1</li>
+            <li class="audiobook-list-item">Chapter 2: Title of Chapter 2</li>
+            <li class="audiobook-list-item">Chapter 3: Title of Chapter 3</li>
+            <!-- Add more chapters as needed -->
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

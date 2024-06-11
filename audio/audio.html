@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-books {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .book {
+            display: flex;
+        }
+
+        .book-box {
+            height: 300px;
+            width: 200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 0 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .book img {
+            height: 200px;
+            width: 160px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .book h4, .book p {
+            text-align: center;
+            margin: 0;
+        }
+
+        .book p {
+            color: #666;
+        }
+
+        .book-box abbr {
+            cursor: help;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .book-box abbr:hover::after {
+            content: attr(title);
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .book-box abbr:hover::after {
+            opacity: 1;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-books">
+        <div class="book">
+            <div class="book-box">
+                <a href="/project/audio/rich/inside.html">
+                    <img src="rich.webp" alt="Rich Dad Poor Dad">
+                </a>
+                <h4>Rich Dad Poor Dad</h4>
+                <p>Personal finance classic, insightful read.</p>
+            </div>
+            <div class="book-box">
+                <a href="#">
+                    <img src="rich.webp" alt="Book 2">
+                </a>
+                <p>Book 2 description.</p>
+            </div>
+            <div class="book-box">
+                <a href="#">
+                    <img src="rich.webp" alt="Book 3">
+                </a>
+                <p>Book 3 description.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
