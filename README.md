@@ -47,12 +47,12 @@ The platform allows users to securely log in, browse books, view descriptions, a
 
 | Technology | Purpose |
 |----------|--------|
-| **HTML5** | Page structure |
+| **HTML** | Page structure |
 | **CSS3** | Styling & layout |
 | **JavaScript** | UI interactions & audio controls |
 | **PHP** | Authentication, sessions, backend logic |
-| **MySQL** | User data storage |
-| **Apache (XAMPP/LAMP)** | Local server |
+| **PostgreSQL** | User data storage |
+| **Apache (XAMPP)** | Local server |
 
 ---
 
@@ -80,4 +80,75 @@ The platform allows users to securely log in, browse books, view descriptions, a
 ---
 
 ## 📂 Project Structure
+radhas-library/
+│
+├── login/
+│ ├── login - logic
+│
+├── books/
+│ ├── books data
+│
+├── audio/
+│ ├── Audiobooks data
+│
+├── mainpage/
+│ ├── frontend files
+│
+├── start/
+│ ├── javascript style design
+│
+├── db/
+│ ├── php files
+│
+├── screenshots/
+│ ├── landing-page.png
+│ ├── login-page.png
+│ ├── library-page.png
+│ ├── book-cards.png
+│ ├── audiobook-player.png
+│
+├── index.html
+└── README.md
 
+
+## ⚙️ How to Run Locally
+
+1. Install **XAMPP / WAMP / LAMP**
+2. Copy project folder into:
+
+
+
+---
+
+## 🔒 Security Practices Used
+
+- PHP session-based authentication
+- Password hashing (`password_hash`, `password_verify`)
+- Protected routes using session checks
+- Logout with session destroy
+- Input validation (recommended)
+
+---
+
+## 🚀 Future Enhancements
+
+- Admin panel for books & audio upload
+- Search & category filtering
+- User profiles
+- Audiobook progress tracking
+- JWT / OAuth authentication
+- Mobile-first optimization
+
+---
+
+## 👨‍💻 Author
+
+**Project Name:** Radha’s Library  
+**Developed By:** *Your Name*  
+**Backend Focus:** PHP Authentication & Sessions  
+**Purpose:** Academic Project / Portfolio / Interview Demo
+
+---
+
+## ⭐ If you like this project
+Give it a ⭐ on GitHub and feel free to fork it!
