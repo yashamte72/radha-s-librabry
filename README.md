@@ -19,7 +19,7 @@ The platform allows users to securely log in, browse books, view descriptions, a
 ## 🖼️ Project Screenshots
 
 ### 🏠 Landing Page
-![Landing Page](Screenshot from 2025-11-04 13-38-24.png)
+![Landing Page](screenshots/landing-page.png)
 
 ---
 
@@ -47,12 +47,12 @@ The platform allows users to securely log in, browse books, view descriptions, a
 
 | Technology | Purpose |
 |----------|--------|
-| **HTML** | Page structure |
+| **HTML5** | Page structure |
 | **CSS3** | Styling & layout |
 | **JavaScript** | UI interactions & audio controls |
 | **PHP** | Authentication, sessions, backend logic |
-| **PostgreSQL** | User data storage |
-| **Apache (XAMPP)** | Local server |
+| **MySQL** | User data storage |
+| **Apache (XAMPP/LAMP)** | Local server |
 
 ---
 
