@@ -130,21 +130,11 @@ radhas-library/
 
 ---
 
-## 🚀 Future Enhancements
-
-- Admin panel for books & audio upload
-- Search & category filtering
-- User profiles
-- Audiobook progress tracking
-- JWT / OAuth authentication
-- Mobile-first optimization
-
----
 
 ## 👨‍💻 Author
 
 **Project Name:** Radha’s Library  
-**Developed By:** *Your Name*  
+**Developed By:** *Yash Amte*  
 **Backend Focus:** PHP Authentication & Sessions  
 **Purpose:** Academic Project / Portfolio / Interview Demo
 
