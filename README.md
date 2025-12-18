@@ -19,7 +19,7 @@ The platform allows users to securely log in, browse books, view descriptions, a
 ## 🖼️ Project Screenshots
 
 ### 🏠 Landing Page
-![Landing Page](screenshots/landing-page.png)
+![Landing Page](Screenshot from 2025-11-04 13-38-24.png)
 
 ---
 
