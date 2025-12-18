@@ -19,27 +19,27 @@ The platform allows users to securely log in, browse books, view descriptions, a
 ## 🖼️ Project Screenshots
 
 ### 🏠 Landing Page
-![Landing Page](screenshots/landing-page.png)
+![image](https://github.com/yashamte72/radha-s-librabry/blob/master/Screenshot%20from%202025-11-04%2013-38-24.png)
 
 ---
 
 ### 🔐 Login Page (PHP Authentication)
-![Login Page](screenshots/login-page.png)
+![Login Page](https://github.com/yashamte72/radha-s-librabry/blob/master/Screenshot%20from%202025-11-04%2013-39-34.png)
 
 ---
 
 ### 📚 Book Library
-![Book Library](screenshots/library-page.png)
+![Book Library](https://github.com/yashamte72/radha-s-librabry/blob/master/Screenshot%20from%202025-11-07%2009-31-48.png)
 
 ---
 
 ### 📘 Book Cards
-![Book Cards](screenshots/book-cards.png)
+![Book Cards](https://github.com/yashamte72/radha-s-librabry/blob/master/Screenshot%20from%202025-11-04%2013-39-11.png)
 
 ---
 
 ### 🎧 Chapter-wise Audiobook Player
-![Audiobook Player](screenshots/audiobook-player.png)
+![Audiobook Player](https://github.com/yashamte72/radha-s-librabry/blob/master/Screenshot%20from%202025-11-07%2009-32-19.png)
 
 ---
 
